@@ -7,3 +7,4 @@ Use _**git clone https://github.com/apvaccess/theAPV.git**_ to clone modules int
 Make sure to have latest ***Python3 & pip3**** installed.
 Use **python3** *.py to run python module.
 Use **sudo bash** .sh to run shell module.
+For Windows , simply download the zip , use **cmd** , **code .** and run it on any IDE.
