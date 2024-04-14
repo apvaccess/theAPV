@@ -1,0 +1,39 @@
+---
+- name: Update library and execute script
+  hosts: your_host_servers
+  become: yes
+  tasks:
+    - name: Update Linux library
+      apt:
+        update_cache: yes
+    
+    - name: Create directory F20PAD
+      command: mkdir F20PAD
+      args:
+        chdir: /home/apv/Downloads/ #Example: Replace with the parent directory path where you want to create F20PAD
+
+    - name: Change directory to F20PAD
+      shell: cd F20PAD
+
+    - name: Clone the GitHub repository
+      git:
+        repo: https://github.com/apvaccess/theAPV.git
+        dest: /home/apv/Downloads/F20PAD
+
+    - name: Change directory to theAPV
+      shell: cd /home/apv/Downloads/F20PAD/theAPV
+
+    - name: Execute shell script apv-IR.sh
+      command: sudo bash apv-IR.sh
+      args:
+        chdir: /home/apv/Downloads/F20PAD/theAPV
+      async: 600
+      poll: 0
+
+    - name: Provide input '1', '2', and '1' to the script
+      expect:
+        command: sudo bash apv-IR.sh
+        responses:
+          (?i)option: '1'
+          (?i)option: '2'
+          (?i)option: '1'
