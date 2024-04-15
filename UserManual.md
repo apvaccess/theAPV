@@ -8,3 +8,4 @@ Make sure to have latest ***Python3 & pip3**** installed.
 Use **python3** *.py to run python module.
 Use **sudo bash** .sh to run shell module.
 For Windows , simply download the zip , use **cmd** , **code .** and run it on any IDE.
+Video Code: _: https://heriotwatt-my.sharepoint.com/:v:/g/personal/apv2_hw_ac_uk/EZegvMFdeZhMtUfdKnWLNjQByo0vNzOP8xC63zr-0DBdGQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&email=F.Haddad%40hw.ac.uk&e=ABhN3W__
